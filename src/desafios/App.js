@@ -1,9 +1,9 @@
 import '../App.css';
 import { useState } from "react"
-import S from './outros_componentes/soma';
-import Sub from './outros_componentes/subtracao';
-import M from './outros_componentes/multiplicacao';
-import D from './outros_componentes/divisao';
+import S from './desafio23/soma';
+import Sub from './desafio23/subtracao';
+import M from './desafio23/multiplicacao';
+import D from './desafio23/divisao';
 
 export default function App(){
 	return(
