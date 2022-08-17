@@ -1,5 +1,4 @@
 import '../App.css';
-import { useState } from "react"
 import S from './desafio23/soma';
 import Sub from './desafio23/subtracao';
 import M from './desafio23/multiplicacao';
