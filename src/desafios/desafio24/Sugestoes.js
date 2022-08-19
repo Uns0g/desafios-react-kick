@@ -1,6 +1,4 @@
-import {filmesNaLista} from './Lista';
-
-const CAMINHO_DA_IMAGEM = 'https://image.tmdb.org/t/p/w1280';
+import {adicionarFilmeNaLista, CAMINHO_DA_IMAGEM} from './Lista';
 
 export function criarElementoDoFilme(dadosDoFilme){
 	const SUGESTOES_EL = document.querySelector('.sugestoes__resultado');
@@ -28,10 +26,7 @@ export function criarElementoDoFilme(dadosDoFilme){
 	</div>`;
 
 	const BOTAO_ADICIONAR_FILME = FILME_EL.querySelector('.filme__botao:first-of-type');
-	BOTAO_ADICIONAR_FILME.onclick = () => {
-		filmesNaLista.push(dadosDoFilme);
-		console.log(filmesNaLista);
-	}
+	BOTAO_ADICIONAR_FILME.addEventListener('click', () => adicionarFilmeNaLista(dadosDoFilme));
 
 	const BOTAO_APAGAR_FILME = FILME_EL.querySelector('.filme__botao:last-of-type');
 	BOTAO_APAGAR_FILME.onclick = () => FILME_EL.remove();
