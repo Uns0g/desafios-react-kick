@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './desafios/desafio24/App';
+import App from './desafios/desafio26/App';
 import reportWebVitals from './reportWebVitals';
+
+let tarefas = []
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
+    <App tarefas={tarefas}/>
   </React.StrictMode>
 );
 
